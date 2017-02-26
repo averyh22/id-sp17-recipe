@@ -40,6 +40,57 @@ img {
   display: block;
   margin: 0 auto;
       }
+      body {
+  max-width: 60em;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+/* info sections / #ingredients and #directions */
+
+.info {
+  padding-top: 1em;
+  border-top: 1px solid #000;
+  margin: 1em 0;
+}
+
+/* info headings / h2 */
+
+.info h2 {
+   margin-top: 0;
+}
+
+/* footer / copyright */
+
+footer {
+  padding: 1em 0;
+}
+
+/* --- multi-columns / wider screen layout --- */
+
+/* create two columns at a width of at least 48em */
+@media (min-width: 48em) {
+  
+  .info {
+    float: left;
+    width: 47.7%;
+    /* add padding to space between the border and the content */
+    padding-left: 1em;
+    /* remove top border, add left border */
+    border-top: 0;
+    border-left: 1px solid #000;
+    /* subtract added left-hand padding and border from the overall width; 50% becomes about 47.7% */
+  }
+  
+ /* footer / clear above floats */
+  
+ /* https://developer.mozilla.org/en-US/docs/Web/CSS/clear */
+  
+  footer {
+    clear: both;
+  }
+  
+}
     </style>
     <header class="full-width">
        <h1 itemprop="name">Fancy <i lang="jp">Ramen</i> for Poor College Students</h1>
