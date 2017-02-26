@@ -59,37 +59,6 @@ img {
    margin-top: 0;
 }
 
-/* footer / copyright */
-
-footer {
-  padding: 1em 0;
-}
-
-/* --- multi-columns / wider screen layout --- */
-
-/* create two columns at a width of at least 48em */
-@media (min-width: 48em) {
-  
-  .info {
-    float: left;
-    width: 47.7%;
-    /* add padding to space between the border and the content */
-    padding-left: 1em;
-    /* remove top border, add left border */
-    border-top: 0;
-    border-left: 1px solid #000;
-    /* subtract added left-hand padding and border from the overall width; 50% becomes about 47.7% */
-  }
-  
- /* footer / clear above floats */
-  
- /* https://developer.mozilla.org/en-US/docs/Web/CSS/clear */
-  
-  footer {
-    clear: both;
-  }
-  
-}
     </style>
   <body>
     <header class="full-width">
