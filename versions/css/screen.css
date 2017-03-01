@@ -1,0 +1,32 @@
+.jump-link-top a {
+  display: block;
+  font: 1.1.em monospace;
+  text-decoration: none;
+  padding: 1.2em;
+}
+
+.jump-link-top .arrow-up {
+  font: bold 1.2em "Trebuchet MS", sans-serif;
+  vertical-align: middle;
+  margin-right: .2em;
+}
+
+.jump-link-text {
+  text-decoration: underline;
+}
+
+@media (min-width: 60em) {
+  header,
+  section {
+    float: left;
+    width: 30%;
+  }
+.jump-link-top {
+  clear: both;
+}
+#ingredients {
+  margin-left: 20%;
+}
+footer {
+  margin-left: 20%;
+}
